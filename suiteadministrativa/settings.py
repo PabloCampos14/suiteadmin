@@ -27,7 +27,13 @@ SECRET_KEY = 'django-insecure-yc2qcz!m5$)7fuftp0wnm)4w@y5p(@x40s-lcc74epn-8l3*v3
 DEBUG = True
 
 ALLOWED_HOSTS = []
+LOGIN_URL = 'login'  # Nombre de la URL para la vista de inicio de sesión
+LOGIN_REDIRECT_URL = 'get_proveedores_list'  # Nombre de la URL a la que redirigir después de iniciar sesión
+LOGOUT_REDIRECT_URL = 'login'  # Nombre de la URL a la que redirigir después de cerrar sesión
 
+ALLOWED_HOSTS = ['5cf9-200-34-73-42.ngrok-free.app', 'localhost' , '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://5cf9-200-34-73-42.ngrok-free.app']
 
 # Application definition
 
